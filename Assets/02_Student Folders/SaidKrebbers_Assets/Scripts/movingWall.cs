@@ -5,13 +5,16 @@ using UnityEngine;
 public class movingWall : MonoBehaviour
 {
     public Transform wall;
+    public AudioSource audio;
 
+
+    private bool playing = false;
     private bool started = false;
     private float timer = 3f;
     private float speed = 6;
     private bool closed = false;
     public Collider triggerZone;
-    private Vector3 endPosition = new Vector3(-41, 0, 10);
+    private Vector3 endPosition = new Vector3(-44, 0, 10);
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +34,7 @@ public class movingWall : MonoBehaviour
         closed = true;
       }
       if(closed){
-        // wall.position = endPosition;
+        wall.position = endPosition;
       }
     }
 
@@ -40,6 +43,7 @@ public class movingWall : MonoBehaviour
       if(!started){
         started = true;
         timer = 2.5f;
+        audio.Play();
       }
     }
 }
