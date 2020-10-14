@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/02_Student Folders/TayfunAygun_Assets/TayfunAygun_Scene.unity
     guid: 437d7a646f3b15d41926c809c70d3dce
+  - enabled: 1
+    path: Assets/02_Student Folders/BramHonig_Assets/BramHonigScene.unity
+    guid: 080923008c3cd5643864499bc5cd6c9a
   m_configObjects: {}
