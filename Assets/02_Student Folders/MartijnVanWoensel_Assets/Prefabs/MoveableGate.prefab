@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCamera: {fileID: 6951031509157853278}
-  player: {fileID: 0}
+  player: {fileID: 7253983127304857660, guid: 761cdc9e4e883334cbdcea062d0befa7, type: 3}
   movableObject: {fileID: 5034932697006284989}
   leverHandle: {fileID: 4063818102817359530}
   text: {fileID: 6951031509266865394}

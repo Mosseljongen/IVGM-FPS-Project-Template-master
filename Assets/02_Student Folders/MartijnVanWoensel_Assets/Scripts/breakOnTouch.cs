@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class breakOnTouch : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class breakOnTouch : MonoBehaviour
     Collider boxCollider;
     Renderer renderer;
     MeshCollider floorMesh;
+
+    public NavMeshSurface navMesh;
+    public bool updateMesh = false;
 
     public AudioSource SoundEffect;
 
@@ -35,7 +39,7 @@ public class breakOnTouch : MonoBehaviour
         if (destroying)
         {
             timer -= Time.deltaTime;
-            UnityEngine.Debug.Log("reducing time");
+            //UnityEngine.Debug.Log("reducing time");
         }
         
         if (!actuallyDestroyed && destroying && timer < 0f)
@@ -44,8 +48,10 @@ public class breakOnTouch : MonoBehaviour
             floorMesh.enabled = false;
             actuallyDestroyed = true;
             destroying = false;
-            UnityEngine.Debug.Log("boom item should be gone");
+            //UnityEngine.Debug.Log("boom item should be gone");
             SoundEffect.Play();
+            if (updateMesh) { navMesh.BuildNavMesh(); }
+            
         }
         
 
@@ -61,14 +67,14 @@ public class breakOnTouch : MonoBehaviour
         {
             if (enemy == null)
             {
-                UnityEngine.Debug.Log("no enemy found");
+                //UnityEngine.Debug.Log("no enemy found");
                 return;
             }
         }
         
 
  
-       UnityEngine.Debug.Log("player was recognized");
+       //UnityEngine.Debug.Log("player was recognized");
        if (!destroyed)
        {                
             destroying = true;
