@@ -5,7 +5,7 @@ using UnityEngine;
 public class movingWall : MonoBehaviour
 {
     public Transform wall;
-    public AudioSource audio;
+    public AudioSource playSound;
 
 
     private bool playing = false;
@@ -43,7 +43,7 @@ public class movingWall : MonoBehaviour
       if(!started){
         started = true;
         timer = 2.5f;
-        audio.Play();
+        playSound.Play();
       }
     }
 }

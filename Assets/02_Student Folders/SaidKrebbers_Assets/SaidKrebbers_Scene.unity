@@ -4087,7 +4087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 360601852}
-  audio: {fileID: 1934736550}
+  playSound: {fileID: 1934736550}
   triggerZone: {fileID: 360601846}
 --- !u!64 &360601848
 MeshCollider:
@@ -11921,8 +11921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 1065226378}
-  audio: {fileID: 1219181323}
-  triggerZone: {fileID: 0}
+  playSound: {fileID: 1219181323}
+  triggerZone: {fileID: 1065226372}
 --- !u!64 &1065226374
 MeshCollider:
   m_ObjectHideFlags: 0
