@@ -5,7 +5,7 @@ using UnityEngine;
 public class moveBlockDown : MonoBehaviour
 {
     public Transform wall;
-    public AudioSource audio;
+    public AudioSource playSound;
 
     private bool started = false;
     private float timer = 3f;
@@ -28,7 +28,7 @@ public class moveBlockDown : MonoBehaviour
       if(started && timer >10.5f){
         if(playing == false){
           playing = true;
-          audio.Play();
+          playSound.Play();
         }
       }
       if(started && timer > 0f){
