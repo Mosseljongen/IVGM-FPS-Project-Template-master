@@ -11,12 +11,14 @@ public class WorldspaceHealthBar : MonoBehaviour
     public Transform healthBarPivot;
     [Tooltip("Whether the health bar is visible when at full health or not")]
     public bool hideFullHealthBar = true;
+    public bool paused = false;
 
     void Update()
     {
+        if (paused) { return; }
         // update health bar value
         healthBarImage.fillAmount = health.currentHealth / health.maxHealth;
-        
+
         // rotate health bar to face the camera/player
         healthBarPivot.LookAt(Camera.main.transform.position);
 
