@@ -25,12 +25,7 @@ public class compress : MonoBehaviour
 
   // Start is called before the first frame update
   void Start()
-  {
-    pressing =false;
-    depressing = false;
-    pressed = false;
-    // depressed = true;
-  }
+  {}
 
   // Update is called once per frame
   void Update()
