@@ -13097,7 +13097,7 @@ PrefabInstance:
     - target: {fileID: 4205173979823203423, guid: b3a57afd144b81b48bcdba95bec2bbba,
         type: 3}
       propertyPath: rotationSpeed
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4205173979823203423, guid: b3a57afd144b81b48bcdba95bec2bbba,
         type: 3}
@@ -13168,6 +13168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerTayfun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232674624635311478, guid: b3a57afd144b81b48bcdba95bec2bbba,
+        type: 3}
+      propertyPath: lookSensitivity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a57afd144b81b48bcdba95bec2bbba, type: 3}
